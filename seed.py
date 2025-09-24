@@ -43,5 +43,5 @@ def insert_data_to_db(users, tasks, status):
         con.commit()
 
 if __name__ == "__main__":
-    users, status, tasks = generate_fake_data(NUMBER_USERS, NUMBER_TASKS, STATUS_LIST)
-    insert_data_to_db(users, status, tasks)
+    users, tasks, status = generate_fake_data(NUMBER_USERS, NUMBER_TASKS, STATUS_LIST)
+    insert_data_to_db(users, tasks, status)
